@@ -1,3 +1,5 @@
+# C言語の勉強メモ
+
 ### 개발 환경 설정
 
 - VS Code → GCC Compiler 설치 → Path 설정 → Version 확인
