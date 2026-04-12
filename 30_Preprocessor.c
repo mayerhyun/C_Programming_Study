@@ -9,10 +9,14 @@
 #define MAX(x, y) (((x) > (y)) ? (x) : (y))
 #define MIN(x, y) (((x) < (y)) ? (x) : (y))
 
+// 만약 typedef를 쓰지 않고 순수하게 구조체만 선언했다면, main 함수 안에서 변수를 만들 때 매번 귀찮게 struct 키워드를 붙여야 합니다.
+// 미사용 시 선언 방식 : struct point p1 = {10, 20};
+// typedef 적용 후 선언 방식 : POINT p1 = {10, 20};
 typedef struct point
 {
     int x, y;
 } POINT;
+// 자바 개발자에게 구조체를 설명할 때 가장 많이 쓰는 비유가 바로 "메서드(Method)가 싹 다 빠진 순수한 DTO" 입니다.
 
 int main()
 {
