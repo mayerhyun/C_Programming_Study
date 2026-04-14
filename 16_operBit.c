@@ -10,7 +10,7 @@ int main()
     bitPrint(&register_A);
 
     // 3번 비트가 0->1, 1->0으로 바뀜
-    register_A ^= (1 << LED_PIN); // 1 ^ 1 = 0
+    register_A ^= (1 << LED_PIN); // 1 ^ 1 = 0 // 서로 다르면 1임
     printf("Toggle 결과:");
     bitPrint(&register_A);
     return 0;

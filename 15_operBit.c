@@ -5,7 +5,7 @@ void bitPrint(unsigned char *data);
 
 int main()
 {
-    unsigned char register_A = 0x2C; // 초기 상태 (0010 1001)  (0010 1100)
+    unsigned char register_A = 0x2C; // 초기 상태 (0010 1100)
     printf("초기 상태: ");
     bitPrint(&register_A);
 
