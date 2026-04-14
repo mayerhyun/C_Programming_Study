@@ -11,6 +11,5 @@ int main()
     // char str[문자열길이 + 1] = "문자열";
     char fruit[7] = "banana";
     printf("%s\n", fruit);
-
     return 0;
 }

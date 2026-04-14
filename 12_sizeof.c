@@ -15,6 +15,6 @@ int main()
     printf("double size : %d\n ", sizeof(double)); // (8바이트): 배정밀도 부동소수점 데이터의 크기입니다.
     printf("a size : %d\n ", sizeof(a));           // (4바이트): a는 int형 변수이므로 4바이트입니다.
     printf("b size : %d\n ", sizeof(b));           // (40바이트):
-    printf("c size : %d\n ", sizeof(c));           // (8바이트) 요소 3개를 가진 배열이므로 8 * 3 = 24바이트입니다.
+    printf("c size : %d\n ", sizeof(c));           // (24바이트): double 요소 3개를 가진 배열이므로 8 * 3 = 24바이트입니다.
     return 0;
 }

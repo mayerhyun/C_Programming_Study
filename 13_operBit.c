@@ -19,8 +19,8 @@ int main()
 
 void bitPrint(unsigned char *data)
 {
-    unsigned char temp = 0x80; // 16진수 80을 2진수로 바꾸면 1000 0000임 (참고로 char는 8비트임)
-    for (int i = 0; i < (sizeof *data) * 8; ++i)
+    unsigned char temp = 0x80;                   // 16진수 80을 2진수로 바꾸면 1000 0000임 (참고로 char는 8비트임)
+    for (int i = 0; i < (sizeof *data) * 8; ++i) // sizeof *data = 1임... 이유? -> *data의 자료형은 unsigned char이기 때문
     {
         if (i % 4 == 0)
             printf(" ");
