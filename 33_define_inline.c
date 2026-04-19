@@ -7,7 +7,7 @@
 //   복잡한 코드는 inline을 붙여봤자 컴파일러가 어차피 일반 함수로 바꿔버립니다.
 // 따라서 로직이 길고 복잡해진다면 처음부터 맘 편하게 일반 함수로 선언해서 쓰는 것이
 // 표준 가이드라인입니다.inline int square_inline(int x)
-inline int square_inline(int x)
+static inline int square_inline(int x)
 {
     return x * x;
 }

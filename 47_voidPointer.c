@@ -12,9 +12,10 @@ int main(void)
     p = intArray; // void형 포인터 p는 int형 1차원 배열을 가리킬 수 있고
     printf("%d\n", *((int *)p + 2));
 
-    p = doubleArray; // double형 2차원 배열을 가리킬 수도 있으며
-    printf("%lf\n", *(*((double (*)[3])p + 1) + 2));
-    // int(p *)[3] 얘랑 똑같은 개념임
+    p = doubleArray;                                 // double형 2차원 배열을 가리킬 수도 있으며
+    printf("%lf\n", *(*((double (*)[3])p + 1) + 2)); // 3개의 값을 가진 배열을 가리키는 게 P이다. 라는 의미
+    // int(*p)[3] -> 배열 포인터
+    // int *p[3] -> 포인터 배열
 
     p = charArray;                     // char * 배열을 가리킬 수도 있다
     printf("%s\n", *((char **)p + 2)); // 이거는 *(*((char **)p + 0) + 2)) 이 경우에 p를 출력함

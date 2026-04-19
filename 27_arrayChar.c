@@ -24,6 +24,7 @@ int main()
 
     // 문자열의 입력
     char name2[50];
+    char name3[50];
     printf("이름을 입력하시오 : ");
     // "Jennifer", "James Dean" ==> 두 종류의 데이터를 각각 입력하고 출력의 결과를 확인
 
@@ -33,9 +34,10 @@ int main()
     // 입력 버퍼(메모리)를 한 글자씩 읽어가다가 바로 이 공백 문자(데이터 번호 32번, ' ')를 마주치는 순간
     // "아, 여기서 하나의 단어가 끝났구나"라고 판단
 
-    fgets(name2, sizeof name2, stdin); // fgets가 먼저 실행되면, 입력 버퍼가 깔끔하게 비어짐
+    fgets(name3, sizeof name3, stdin); // fgets가 먼저 실행되면, 입력 버퍼가 깔끔하게 비어짐
     // fgets(저장할_배열, 최대_크기, 데이터_출처);  stdin = 키보드로부터 데이터가 입력받아졌다는 의미
     printf("반갑습니다. %s님!\n", name2);
+    printf("반갑습니다. %s님!\n", name3);
 
     // 1. scanf("%s"): "공백은 단어의 끝(구분자)이다"
     // 2. fgets: "공백은 일반 알파벳과 똑같은 문자다"

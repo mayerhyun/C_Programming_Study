@@ -7,8 +7,8 @@ int main(void)
     printf("arr[0]의 값: %d\n", arr[0]);
     printf("*ptr의 값: %d\n", *ptr);
     printf("ptr[0]의 값: %d\n", ptr[0]); // 포인터 변수인 ptr을 배열처럼 표현
-    printf("*arr의 값: %d\n", *arr);     // 배열명인 arr을 포인터처럼 표현
-    printf("arr의 값: %d\n", arr);
-    printf("ptr의 값: %d\n", ptr);
+    printf("*arr의 값: %d\n", *arr);     // 배열명인 arr을 포인터처럼 표현 : 20
+    printf("arr의 값: %d\n", arr);       // arr의 주소
+    printf("ptr의 값: %d\n", ptr);       // arr의 주소
     return 0;
 }

@@ -5,8 +5,11 @@ int main()
     int *ptr;
     ptr = ary;
 
+    printf("%d\n", ptr);
     printf("%d\n", *ptr++);
+    printf("%d\n", *ptr);
     printf("%d\n", (*ptr)++);
+    printf("%d\n", *ptr);
     printf("%d\n", *++ptr); // == > *(++ptr)
     printf("%d\n", ++*ptr); // == > ++(*ptr)
 }

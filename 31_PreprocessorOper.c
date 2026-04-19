@@ -11,6 +11,7 @@
         printf(#pt "=");                  \
         printf("(%d, %d)\n", pt.x, pt.y); \
     }
+// 중괄호 {}의 역할: 다중 문장 블록화 (Statement Block)
 typedef struct point
 {
     int x, y;
